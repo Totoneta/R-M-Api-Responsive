@@ -1,0 +1,494 @@
+/* Importaciones */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/* Reseteo */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Anton", sans-serif;
+}
+
+body {
+    background-color: #052e05;
+}
+
+/* Navbar */
+.header-navbar {
+    background-color: #052e05;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Imagen de logo navbar */
+.navbar>a>img {
+    height: 7rem;
+}
+
+/* Menu navbar */
+.lista-menu {
+    display: flex;
+    list-style: none;
+    margin: 1rem;
+}
+
+
+/* Barra de busqueda navbar */
+.inputs {
+    margin-left: 4rem;
+    width: 33rem;
+    display: flex;
+}
+
+.input-buscar {
+    height: 3rem;
+    align-items: center;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    width: 80%;
+    padding: .5rem;
+    outline: none;
+}
+
+.btn-buscar {
+    height: 3rem;
+    border-radius: 0 5px 5px 0;
+    width: 20%rem;
+    color: #ffffff;
+    background-color: #055e00;
+    cursor: pointer;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+/* Barra de búsqueda función de JS */
+.no-buscado {
+    display: none;
+}
+
+/* Opciones de navegación */
+.item-menu-inicio>a {
+    color: #ffffff;
+    text-decoration: none;
+    height: 100%;
+    margin: 1rem;
+    height: 5rem;
+    font-size: 1.3rem;
+}
+
+.item-menu-inicio>a:hover {
+    color: #000000;
+}
+
+.item-menu-personajes>a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    height: 100%;
+    margin: 1rem;
+    height: 5rem;
+    font-size: 1.3rem;
+}
+
+.item-menu-personajes>a:hover {
+    color: #ffffff;
+}
+
+.item-menu-episodios>a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    height: 100%;
+    margin: 1rem;
+    height: 5rem;
+    font-size: 1.3rem;
+}
+
+.item-menu-episodios>a:hover {
+    color: #000000;
+}
+
+/* Tarjetas de los personajes */
+.personajes {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.personaje {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: #0b860b;
+    border: 3px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.personaje:hover {
+    box-shadow: 5px 5px 5px;
+}
+
+/* Imagen Personaje */
+.personaje>img {
+    min-width: 5rem;
+    width: 90%;
+    padding: 1rem;
+
+}
+
+/* Datos Personaje */
+.datos-personaje {
+    color: #000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Status Personajes*/
+.alive {
+    color: #fff;
+    background-color: #055e00;
+    border-radius: 20px;
+    width: 70%;
+    margin: .5rem;
+
+}
+
+.dead {
+    color: #000;
+    background-color: #a30808;
+    border-radius: 20px;
+    width: 70%;
+    margin: .5rem;
+
+}
+
+.unknown {
+    color: #000;
+    background-color: #e6e614;
+    border-radius: 20px;
+    width: 70%;
+    margin: .5rem;
+
+}
+
+/* Specie Personajes */
+.humano {
+    color: #000;
+    background-color: #e1c697;
+    border-radius: 20px;
+    width: 70%;
+    margin: .5rem;
+}
+
+.alien {
+    color: #000;
+    background-color: #8eda93;
+    border-radius: 20px;
+    width: 70%;
+    margin: .5rem;
+}
+
+/* Footer */
+.footer {
+    margin-top: 1rem;
+    background-color: #000;
+    color: #fff;
+    height: 13rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer>h3 {
+    font-size: 2rem;
+}
+
+
+/* MEDIAQUERIES */
+
+/* Smart Phone Pequeño */
+
+@media screen and (min-width: 345px) {
+
+    /* Barra de navegación */
+    .header-navbar {
+        height: auto;
+    }
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+
+    }
+
+    .navbar>a>img {
+        height: 5rem;
+    }
+
+    .item-menu-inicio>a {
+        font-size: 13px;
+    }
+
+    .item-menu-personajes>a {
+        font-size: 13px;
+
+    }
+
+    .item-menu-episodios>a {
+        font-size: 13px;
+    }
+
+    .inputs {
+        width: auto;
+        margin: 0;
+    }
+
+    .input-buscar {
+        width: 75%;
+    }
+
+    .btn-buscar {
+        width: 25%;
+        font-size: .5rem;
+    }
+
+    /* Tarjetas de los personajes */
+    .personaje {
+        padding: 0;
+        margin: 3px;
+    }
+
+    /* Imagen Personaje */
+    .personaje>img {
+        width: 100%;
+    }
+
+    /* Datos Personaje */
+    .datos-personaje {
+        color: #000;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+/* Smart Phone Grande */
+
+@media screen and (min-width: 710px) {
+
+    /* Barra de navegación */
+    .header-navbar {
+        height: auto;
+    }
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        height: auto;
+
+    }
+
+    .navbar>a>img {
+        height: 7rem;
+    }
+
+    .item-menu-inicio>a {
+        font-size: 20px;
+    }
+
+    .item-menu-personajes>a {
+        font-size: 20px;
+
+    }
+
+    .item-menu-episodios>a {
+        font-size: 20px;
+    }
+
+    .inputs {
+        width: auto;
+        margin: 1rem;
+    }
+
+    .input-buscar {
+        width: 70%;
+    }
+
+    .btn-buscar {
+        width: 30%;
+        font-size: .9rem;
+    }
+
+    /* Tarjetas de los personajes */
+    .personaje {
+        padding: .5rem;
+        margin: 1rem;
+    }
+
+    /* Imagen Personaje */
+    .personaje>img {
+        width: 100%;
+    }
+
+    /* Datos Personaje */
+    .datos-personaje {
+        color: #000;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+
+/* Ordenador portátil medio */
+
+@media screen and (min-width: 1360px) {
+
+    /* Barra de navegación */
+    .header-navbar {
+        height: auto;
+    }
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        height: auto;
+
+    }
+
+    .navbar>a>img {
+        height: 9rem;
+    }
+
+    .item-menu-inicio>a {
+        font-size: 25px;
+    }
+
+    .item-menu-personajes>a {
+        font-size: 25px;
+
+    }
+
+    .item-menu-episodios>a {
+        font-size: 25px;
+    }
+
+    .inputs {
+        width: 30rem;
+        margin: 1rem;
+    }
+
+    .input-buscar {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .btn-buscar {
+        width: 20%;
+        font-size: 1.2rem;
+    }
+
+    /* Tarjetas de los personajes */
+    .personaje {
+        padding: .5rem;
+        margin: 1.5rem;
+    }
+
+    /* Imagen Personaje */
+    .personaje>img {
+        width: 100%;
+    }
+
+    /* Datos Personaje */
+    .datos-personaje {
+        color: #000;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+
+
+/* Ordenador de escritorio medio */
+
+@media screen and (min-width: 1430px) {
+
+    /* Barra de navegación */
+    .header-navbar {
+        height: auto;
+    }
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        height: auto;
+
+    }
+
+    .navbar>a>img {
+        height: 10rem;
+    }
+
+    .item-menu-inicio>a {
+        font-size: 27px;
+    }
+
+    .item-menu-personajes>a {
+        font-size: 27px;
+
+    }
+
+    .item-menu-episodios>a {
+        font-size: 27px;
+    }
+
+    /* Tarjetas de los personajes */
+    .personaje {
+        padding: .5rem;
+    }
+
+    /* Imagen Personaje */
+    .personaje>img {
+        width: 100%;
+        height: 65%;
+    }
+
+    /* Datos Personaje */
+    .datos-personaje {
+        height: 35%;
+        font-size: 1.5rem;
+    }
+
+}
