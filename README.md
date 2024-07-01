@@ -1,5 +1,6 @@
+# ESPAÑOL:
 # Rick-&-Morty-Api-&-Responsive
-ESPAÑOL:
+
 Proyectos desarrollado API y Responsive. / Developed project API y Responsive.
 
 IMG
@@ -21,7 +22,7 @@ API
 - Utilizado Episodios y Personajes
  
 
-INGLES
+# INGLES
 # Rick-&-Morty-Api-&-Responsive
 Developed API and Responsive projects. / Developed API and Responsive project.
 
